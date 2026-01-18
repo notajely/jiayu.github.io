@@ -53,6 +53,10 @@ h1 {
   font-weight: 500;
 }
 
+.social-links a i {
+  margin-right: 4px;
+}
+
 .social-links a:hover {
   text-decoration: underline;
 }
