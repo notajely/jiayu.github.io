@@ -1,30 +1,177 @@
+/* Google Fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+:root {
+  --bg-color: #ffffff;
+  --text-color: #333333;
+  --link-color: #0066cc;
+  --secondary-text: #666666;
+  --border-color: #eeeeee;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    color: #333;
-    max-width: 800px;
-    margin: auto;
-    padding: 20px;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  background-color: var(--bg-color);
 }
 
+/* Header */
 header {
-    text-align: center;
-    padding-bottom: 20px;
-    border-bottom: 2px solid #007acc;
+  margin-bottom: 60px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--border-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0 0 10px 0;
+  letter-spacing: -0.02em;
+}
+
+.intro-text {
+  font-size: 1.1rem;
+  color: var(--secondary-text);
+  max-width: 600px;
+}
+
+.social-links {
+  margin-top: 15px;
+}
+
+.social-links a {
+  margin-right: 15px;
+  text-decoration: none;
+  color: var(--link-color);
+  font-weight: 500;
+}
+
+.social-links a:hover {
+  text-decoration: underline;
+}
+
+/* Language Toggle */
+.lang-toggle {
+  cursor: pointer;
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background: white;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+}
+
+.lang-toggle:hover {
+  background: #f5f5f5;
+  border-color: #ccc;
+}
+
+/* Sections */
 section {
-    margin-top: 20px;
+  margin-bottom: 50px;
 }
 
-h1, h2 {
-    color: #007acc;
+h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 10px;
+  display: flex;
+  align-items: center;
 }
 
-ul {
-    list-style: none;
-    padding: 0;
+/* Timeline / Items */
+.timeline-item {
+  display: flex;
+  margin-bottom: 30px;
 }
 
-ul li {
-    margin-bottom: 10px;
+.timeline-date {
+  flex: 0 0 120px;
+  font-weight: 500;
+  color: var(--secondary-text);
+  padding-top: 2px;
+}
+
+.timeline-content {
+  flex: 1;
+}
+
+.timeline-title {
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+  color: #000;
+}
+
+.timeline-company {
+  font-weight: 500;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+/* Bilingual text visibility */
+/* By default (English mode): Hide Chinese */
+.cn-text {
+  display: none;
+}
+
+/* In Chinese mode: Hide English, Show Chinese */
+body.show-cn .en-text {
+  display: none;
+}
+
+body.show-cn .cn-text {
+  display: block; /* Default for div/p/sections */
+}
+
+/* Special handling for inline elements (like inside h2 or p) */
+span.cn-text {
+  display: none;
+}
+body.show-cn span.cn-text {
+  display: inline;
+}
+
+/* Links */
+a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2rem;
+  }
+  
+  .timeline-item {
+    flex-direction: column;
+  }
+  
+  .timeline-date {
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+  }
+  
+  header {
+    flex-direction: column;
+  }
+  
+  .lang-toggle {
+    margin-top: 15px;
+    align-self: flex-end;
+  }
 }

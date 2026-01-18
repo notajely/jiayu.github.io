@@ -1,105 +1,231 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jiayu Shen - Digital Humanities Researcher</title>
+    <title>Jiayu Shen 沈嘉羽</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Optional: Add favicon here later -->
 </head>
-
 <body>
+
     <header>
-        <h1>Jiayu Shen</h1>
-        <p>Master’s student in Digital Humanities | Computational Linguistics | Cognitive Linguistics</p>
-        <p>Contact: jiayu.shen.5783@student.uu.se | +46 760214476</p>
+        <div>
+            <h1>Jiayu Shen 沈嘉羽</h1>
+            <div class="intro-text">
+                <span class="en-text">
+                    AI Ethics Researcher. Currently working on Trusted AI at Alibaba Group.
+                    Master's student in Digital Humanities at Uppsala University with a background in AI Ethics, Computational Linguistics and Literature.
+                </span>
+                <span class="cn-text">
+                    专注于AI伦理研究。目前在阿里巴巴集团从事可信AI研究。
+                    乌普萨拉大学数字人文硕士，拥有AI伦理、计算语言学、文学背景。
+                </span>
+            </div>
+            <div class="social-links">
+                <a href="mailto:jiayu.shen.0203@gmail.com">Email</a>
+                <a href="https://www.linkedin.com/in/jiayu-s-290227246" target="_blank">LinkedIn</a>
+                <a href="https://github.com/notajely" target="_blank">GitHub</a>
+            </div>
+        </div>
+        <button id="langToggle" class="lang-toggle" onclick="toggleLanguage()">中 / EN</button>
     </header>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I am currently a Master student in Digital Humanities at Uppsala University, focusing on Computational
-            Linguistics and Cognitive Linguistics. I hold a Bachelor's degree in English Linguistics and Literature. My
-            research primarily revolves around Computational Linguistics, NLP, and Cognitive Linguistics, particularly
-            at the intersection of AI and Cognitive Linguistics, exploring the intricate mechanisms behind human
-            language cognition.</p>
+    <section id="experience">
+        <h2>
+            <span class="en-text">Experience</span>
+            <span class="cn-text">工作经历</span>
+        </h2>
+
+        <div class="timeline-item">
+            <div class="timeline-date">
+                2025.08 - <span class="en-text">Present</span><span class="cn-text">至今</span>
+            </div>
+            <div class="timeline-content">
+                <div class="en-text">
+                    <div class="timeline-title">Security Technical Operations (Trusted AI)</div>
+                    <div class="timeline-company">Alibaba Group Holding Ltd. (Group Security Dept)</div>
+                    Responsible for the ethical evaluation of Large Models (LLMs).
+                    <ul style="margin-top:5px; padding-left: 20px; list-style-type: disc;">
+                        <li>Building comprehensive ethical risk frameworks.</li>
+                        <li>Researching global AI governance systems, policies, and AI ethics.</li>
+                        <li>Designing scoring systems and evaluation sets for benchmarks.</li>
+                    </ul>
+                </div>
+                <div class="cn-text">
+                    <div class="timeline-title">安全技术运营（可信AI方向）</div>
+                    <div class="timeline-company">阿里巴巴集团安全部</div>
+                    负责大模型伦理评测。
+                    <ul style="margin-top:5px; padding-left: 20px; list-style-type: disc;">
+                        <li>构建伦理风险体系，研究国内外治理体系、政策以及AI伦理。</li>
+                        <li>设计benchmark所需的评分体系、评测集等内容。</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>Programming Languages: Python, R</li>
-            <li>Tools: Antconc, Voyant</li>
-            <li>Data Analysis: Text Mining, Sentiment Modeling, Web Scraping, Corpus Analysis</li>
-            <li>Languages: Mandarin (native), English (fluent), French (basic)</li>
-        </ul>
+    <section id="education">
+        <h2>
+            <span class="en-text">Education</span>
+            <span class="cn-text">教育背景</span>
+        </h2>
+
+        <div class="timeline-item">
+            <div class="timeline-date">2023.08 - 2025.06</div>
+            <div class="timeline-content">
+                <div class="en-text">
+                    <div class="timeline-title">M.A. in Digital Humanities</div>
+                    <div class="timeline-company">Uppsala University, Sweden</div>
+                    Specialization: NLP, Algorithmic Bias, Cognitive Modeling.
+                    <br>Key Courses: NLP, Language Technology Programming, Distant Reading.
+                </div>
+                <div class="cn-text">
+                    <div class="timeline-title">数字人文文学硕士</div>
+                    <div class="timeline-company">瑞典乌普萨拉大学</div>
+                    主修数字人文。专攻方向：NLP、算法偏差、认知建模。
+                    <br>核心课程：自然语言处理、语言技术编程、远距离阅读。
+                </div>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-date">2019.09 - 2023.06</div>
+            <div class="timeline-content">
+                <div class="en-text">
+                    <div class="timeline-title">B.A. in English Linguistics and Literature</div>
+                    <div class="timeline-company">China University of Petroleum (Qingdao), China</div>
+                    Undergraduate Thesis: Corpus Analysis of Lin Yutang’s Translation Style.
+                </div>
+                <div class="cn-text">
+                    <div class="timeline-title">英语语言文学学士</div>
+                    <div class="timeline-company">中国石油大学（华东）</div>
+                    本科论文：林语堂翻译风格的语料库分析。
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section id="research-interests">
-        <h2>Research Interests</h2>
-        <ul>
-            <li><strong>AI and Human Cognition</strong>: Exploring how AI can simulate and extend human cognition
-                through language models, particularly focusing on cultural biases and cognitive biases.</li>
-            <li><strong>Computational Linguistics & Cross-Cultural Semantics</strong>: Investigating the effects of data
-                inequality on language models’ knowledge representation across different cultural contexts.</li>
-            <li><strong>Neuro-linguistics & Cognitive Linguistics Applications</strong>: Analyzing language models’
-                ability to represent human cognitive structures, especially in multilingual contexts.</li>
-            <li><strong>AI Bias and Fairness</strong>: Researching how AI biases reflect or perpetuate human cognitive
-                biases, with a focus on improving model fairness.</li>
-            <li><strong>AI-Generated Cognition & Social Biases</strong>: Studying the extent to which AI models develop
-                human-like social biases, even without explicit human input.</li>
-        </ul>
+    <section id="research">
+        <h2>
+            <span class="en-text">Research Experience</span>
+            <span class="cn-text">研究经历</span>
+        </h2>
+
+        <div class="timeline-item">
+            <div class="timeline-date">2025.01 - 2025.06</div>
+            <div class="timeline-content">
+                <div class="en-text">
+                    <div class="timeline-title">Master Thesis: Structural Bias in GPT-2</div>
+                    "Uncovering Structural Bias in GPT-2".
+                    Investigating occupational-gender bias formation using embedding projection and clustering. Integrating prototype theory to model stereotype internalization.
+                </div>
+                <div class="cn-text">
+                     <div class="timeline-title">硕士论文：GPT-2中的结构性偏差</div>
+                    “揭示GPT-2中的结构性偏差”。
+                    利用嵌入投影和聚类技术研究职业-性别偏差的形成。结合原型理论模拟刻板印象的内化过程。
+                </div>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-date">2024.09</div>
+            <div class="timeline-content">
+                <div class="en-text">
+                    <div class="timeline-title">Internship: Theological Theme Extraction</div>
+                    <div class="timeline-company">Stockholm University (Prof. Beata Megyesi)</div>
+                    "Topic Modeling of Nicholas of Cusa’s Latin Sermons".
+                    Designed a hybrid LDA-transformer pipeline for theological theme extraction from low-resource Latin texts.
+                </div>
+                <div class="cn-text">
+                    <div class="timeline-title">实习项目：神学布道主题建模</div>
+                    <div class="timeline-company">斯德哥尔摩大学 (Prof. Beata Megyesi)</div>
+                    Nicholas of Cusa 拉丁布道的各个主题提取。
+                    设计了混合LDA-Transformer流程，用于低资源拉丁文本的神学主题提取。
+                </div>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-date">2024.02</div>
+            <div class="timeline-content">
+                <div class="en-text">
+                    <div class="timeline-title">Poe’s Affective Topology</div>
+                    "NLP Analysis of Literary Emotion".
+                    Applied BERTopic and VADER to map emotional contours in Edgar Allan Poe's works, connecting them to cognitive-linguistic theories.
+                </div>
+                <div class="cn-text">
+                    <div class="timeline-title">爱伦·坡的情感拓扑</div>
+                    “文学情感的NLP分析”。
+                    应用BERTopic和VADER绘制情感轮廓，并将其与认知语言学理论联系起来。
+                </div>
+            </div>
+        </div>
+
+         <div class="timeline-item">
+            <div class="timeline-date">2024.01</div>
+            <div class="timeline-content">
+                <div class="en-text">
+                    <div class="timeline-title">Endangered Language Modeling</div>
+                    "Human-in-the-Loop Qiang NLP".
+                    Led a digital preservation project using ASR and MT tools with a community verification loop for the Qiang language.
+                </div>
+                <div class="cn-text">
+                    <div class="timeline-title">濒危语言建模</div>
+                    “人机回环的羌语NLP”。
+                    领导了一个使用ASR和MT工具的数字保护项目，包含针对羌语的社区验证环节。
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section id="projects">
-        <h2>Research Projects</h2>
-        <ul>
-            <li><strong>Master's Thesis (Working Title):</strong> “Cognitive Biases in Large Language Models: A
-                Corpus-based Study of AI-generated Texts in Multilingual Contexts”. Research covers cognitive biases in
-                LLMs in multilingual settings, using corpus methods to analyze cultural/cognitive differences in AI
-                texts, focusing on model fairness and cross-cultural semantics.</li>
-            <li><strong>Medieval Theology Unveiled: Neural Network Analysis of Sermons by Nicholas of Cusa</strong> -
-                Developed preprocessing workflows and designed experiments to assess model performance in low-resource
-                language settings. <em>Skills:</em> Python, NLP, Topic Modeling</li>
-            <li><strong>Exploring the Shadows: A Computational Analysis of Edgar Allan Poe’s Literary
-                    Sentiments</strong> - Conducted web scraping, topic modeling with BERTopic, and sentiment analysis
-                with VADER. <em>Skills:</em> Python, NLP, Sentiment Analysis, Data Visualization</li>
-            <li><strong>Reviving Lost Tone: How NLP Saves Endangered Language</strong> - Focused on digital preservation
-                of the Qiang language through NLP-based archiving methods. <em>Skills:</em> NLP, Language Preservation,
-                Machine Translation</li>
-            <li><strong>Digital Cultural Heritage Exhibition Design: The Golden City in the Underworld</strong> -
-                Designed a digital heritage exhibition using Chinese burial artifacts. <em>Skills:</em> Exhibition
-                Design, Digital Heritage, Project Management</li>
-            <li><strong>A Corpus-based Study on Lexical Style of Lin Yutang’s Translation</strong> - Analyzed
-                translation style using Python and AntConc. <em>Skills:</em> Corpus Linguistics, Python, Translation
-                Studies, Data Analysis</li>
-        </ul>
-    </section>
-    <section id="awards">
-        <h2>Awards and Honors</h2>
-        <ul>
-            <li>Anders Wall Scholarship for Excellence in Interdisciplinary Studies (April 2024, Uppsala University)
-            </li>
-            <li>Outstanding Graduate, Shanghai International Studies University (2022)</li>
-        </ul>
-    </section>
-
-    <section id="referees">
-        <h2>Referees</h2>
-        <ul>
-            <li>Beáta Megyesi, Professor of Computational Linguistics, Stockholm University<br>Email:
-                beata.megyesi@ling.su.se</li>
-            <li>Matti La Mela, Associate Professor in Digital Humanities, Uppsala University<br>Email:
-                matti.lamela@abm.uu.se</li>
-        </ul>
+    <section id="honors">
+        <h2>
+            <span class="en-text">Honors & Scholarships</span>
+            <span class="cn-text">荣誉与奖项</span>
+        </h2>
+        <div class="timeline-item">
+             <div class="timeline-date">2025.04</div>
+             <div class="timeline-content">
+                 <div class="en-text">
+                     <div class="timeline-title">Cog-SUP Admission & SMART-UP Scholarship</div>
+                     For the Cogmaster program at Université Paris Cité.
+                 </div>
+                 <div class="cn-text">
+                     <div class="timeline-title">Cog-SUP 录取及 SMART-UP 奖学金</div>
+                     入选巴黎西岱大学 Cogmaster 项目并获得 SMART-UP 奖学金。
+                 </div>
+             </div>
+        </div>
+        <div class="timeline-item">
+            <div class="timeline-date">2024.04</div>
+            <div class="timeline-content">
+                <div class="en-text">
+                    <div class="timeline-title">Anders Wall Scholarship</div>
+                    <div class="timeline-company">Uppsala University</div>
+                    Awarded for excellence in interdisciplinary studies and potential in AI ethics.
+                </div>
+                <div class="cn-text">
+                    <div class="timeline-title">Anders Wall 奖学金</div>
+                    <div class="timeline-company">瑞典乌普萨拉大学</div>
+                    Anders Wall 跨学科卓越奖学金。表彰在AI伦理领域的跨学科研究潜力和卓越表现。
+                </div>
+            </div>
+       </div>
     </section>
 
-    <section id="contact" class="contact">
-        <h2>Contact</h2>
-        <p>Email: jiayu.shen.5783@student.uu.se</p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/jiayu-s-290227246"
-                target="_blank">www.linkedin.com/in/jiayu-s-290227246</a></p>
-    </section>
+    <footer>
+        <p style="color: #999; font-size: 0.8rem; margin-top: 50px;">
+            &copy; 2026 Jiayu Shen. 
+        </p>
+    </footer>
+
+    <script>
+        function toggleLanguage() {
+            document.body.classList.toggle('show-cn');
+            const btn = document.getElementById('langToggle');
+            // Optional: Toggle button text if desired, though '中 / EN' works for both states
+        }
+    </script>
 </body>
-
 </html>
-<!-- Trigger deployment -->
